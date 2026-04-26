@@ -1,9 +1,13 @@
+/* ===== Base Reset =====
+   Removes default browser spacing and standardizes box sizing. */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== Page Layout =====
+   Centers the pricing section in the viewport. */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +18,8 @@ body {
     padding: 20px;
 }
 
+/* ===== Cards Row Container =====
+   Aligns both cards side-by-side with spacing. */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +29,8 @@ body {
     align-items: flex-start;
 }
 
+/* ===== Card Shell =====
+   Shared card frame, size, and spacing. */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +42,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Card upper area (everything above the button). */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan title style (e.g., Hobby / Pro). */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +57,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row containing amount and optional period. */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +65,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price value (e.g., Free, $20). */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Small price suffix (e.g., /mo.). */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Content section above the CTA button. */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Intro label above each feature list. */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Feature list base (unstyled list). */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Individual feature row with icon + text alignment. */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +105,7 @@ body {
     color: #26251e;
 }
 
+/* Check icon displayed before each feature item. */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +113,8 @@ body {
     font-weight: 400;
 }
 
+/* ===== Buttons =====
+   Shared button shape, spacing, and interaction behavior. */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +129,34 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Default hover feedback for neutral button style. */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Active state keeps same contrast as hover. */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primary CTA variant used for the Pro plan. */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Primary hover state with lighter black tone. */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Primary active state mirrors hover for consistency. */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* ===== Page Badge =====
+   Floating label at top center of the viewport. */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +170,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Emphasized text inside the page badge. */
 .page-label strong {
     color: #333;
 }
