@@ -155,6 +155,33 @@ body {
     background-color: #333;
 }
 
+.download-button.secondary {
+    background-color: #e6e5e0;
+    color: #333;
+}
+
+.download-button.secondary:hover {
+    background-color: #D8D6CE;
+}
+
+.download-button.secondary:active {
+    background-color: #D8D6CE;
+}                                           
+
+.download-button.tertiary {
+    background-color: transparent;
+    border: 1px solid #c2c1ba;
+    color: #333;
+}   
+
+.download-button.tertiary:hover {
+    background-color: #e9e6e1;
+}
+
+.download-button.tertiary:active {
+    background-color: #D8D6CE;
+}               
+
 /* ===== Page Badge =====
    Floating label at top center of the viewport. */
 .page-label {
